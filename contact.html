@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&display=swap">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Gveret+Levin:wght@400;700&display=swap">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>פשוט לבשל</title>
+	<link rel="stylesheet" href="styles.css">
+	<!-- Favicon link -->
+	<link rel="icon" href="./images/icon.png">
+</head>
+<script>
+	function submitForm() {
+		// Here you can perform additional validation if needed
+
+		// Display success message
+		alert("הבקשה נשלחה בהצלחה!");
+
+		// Optionally, reset the form after submission
+		document.getElementById("contactForm").reset();
+	}
+</script>
+
+<body dir="rtl">
+	<img src="./images/main.png" style="width: 100%;" />
+
+	<!-- Navigation -->
+	<nav style="margin-top: -10px;">
+		<ul class="mainUl">
+			<li><a class="mainA" href="index.html">דף הבית</a>
+			</li>
+			<li><a class="mainA" href="about.html">אודות</a></li>
+			<li><a class="mainA" href="sitemap.html">מפת האתר</a>
+
+			<li><a class="mainA" href="breakfast.html">ארוחות
+					בוקר</a>
+				<ul class="dropdown">
+					<li><a href="breakfast1.html">פנקייקים </a>
+					</li>
+					<li><a href="breakfast3.html">אגז בנדיקט</a>
+					</li>
+					<li><a href="breakfast2.html">שקשוקה</a></li>
+					<li><a href="breakfast4.html">טוסט מפנק</a>
+					</li>
+
+				</ul>
+			</li>
+			<li><a class="mainA" href="lunch.html">ארוחות
+					צהריים</a>
+				<ul class="dropdown">
+					<li><a href="lunch1.html">שניצל עם ציפס ביתי
+						</a></li>
+					<li><a href="lunch2.html">קציצות בקר ברוטב
+							עגבניות</a>
+					</li>
+					<li><a href="lunch3.html">עוף בתנור עם תפוחי
+							אדמה
+							ובטטות</a></li>
+					<li><a href="lunch4.html">מוקפץ ירקות עם
+							טופו</a></li>
+
+				</ul>
+			</li>
+			<li><a class="mainA" href="dinner.html">ארוחות
+					ערב</a>
+				<ul class="dropdown">
+					<li><a href="dinner1.html">לזניית גבינות ותרד
+						</a></li>
+					<li><a href="dinner2.html">פשטידת ירקות
+							וגבינות</a>
+					</li>
+					<li><a href="dinner3.html">דג סלמון בתנור עם
+							עשבי תיבול
+						</a></li>
+					<li><a href="dinner4.html">פסטה עם רוטב
+							עגבניות
+							ובזיליקום
+						</a></li>
+
+				</ul>
+
+			</li>
+
+			<li><a class="mainA" style="color: #a8a8a8;" href="contact.html">צור
+					קשר</a></li>
+			</li>
+		</ul>
+	</nav>
+
+
+	<main>
+		<div style="display: flex;">
+
+			<p
+				style="margin-inline-start: 30px; margin-top: 10px;color: #e80dbc;font-size: 12px; font-weight: bold;">
+				צור קשר</p>
+		</div>
+		<section id="home">
+			<form onsubmit="submitForm(); return false;">
+				<label style="color: #f78ce1;" for="firstName">שם
+					פרטי:</label><br>
+				<input type="text" id="firstName" name="firstName"
+					style="border-radius: 25px; border: 1px solid #f78ce1;"
+					required><br><br>
+
+				<label style="color: #f78ce1;" for="lastName">שם
+					משפחה:</label><br>
+				<input type="text" id="lastName" name="lastName"
+					style="border-radius: 25px; border: 1px solid #f78ce1;"
+					required><br><br>
+
+				<label style="color: #f78ce1;">מין:</label><br>
+				<input type="checkbox" id="genderMale" name="gender"
+					style="border-radius: 25px; border: 1px solid #f78ce1;"
+					value="male">
+				<label style="color: #f78ce1;"
+					for="genderMale">גבר</label><br>
+				<input type="checkbox" id="genderFemale" name="gender"
+					style="border-radius: 25px; border: 1px solid #f78ce1;"
+					value="female">
+				<label style="color: #f78ce1;"
+					for="genderFemale">אישה</label><br><br>
+
+				<label style="color: #f78ce1;" for="phoneNumber">מספר
+					טלפון:</label><br>
+				<input type="tel" id="phoneNumber" name="phoneNumber"
+					style="border-radius: 25px; border: 1px solid #f78ce1;"
+					required>
+				<br><br>
+
+				<label style="color: #f78ce1;" for="reason">מדוע אתה פונה
+					אלינו?</label><br>
+				<select id="reason" name="reason" required>
+					<option value="Question">שאלה</option>
+					<option value="Feedback">פידבק</option>
+					<option value="Support">בקשה למתכון</option>
+					<option value="Other">אחר</option>
+				</select><br><br>
+				<label style="color: #f78ce1;"
+					for="extraInfo">פירוט:</label><br>
+				<textarea id="extraInfo" name="extraInfo" rows="4"
+					cols="50"></textarea><br><br>
+
+
+				<input style="color: white; border-radius: 25px; background: #f78ce1; cursor: pointer; width: 100px; height: 20px; border: 1px solid #f78ce1;"
+					type="submit" value="שלח">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; פשוט לבשל.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

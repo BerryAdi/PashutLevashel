@@ -1,0 +1,272 @@
+/* Reset styles */
+@font-face {
+	font-family: 'Gveret Lavin';
+	src: url('./GveretLevinAlefAlefAlef-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Gveret Lavin', Arial, sans-serif;
+	font-weight: 400;
+	/* Normal weight */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Basic styling for navigation */
+nav {
+	background-color: #f78ce1;
+	color: #fff;
+	padding: 10px;
+}
+
+a {
+	color: #f78ce1;
+	font-family: 'Rubik', sans-serif;
+}
+
+a:hover {
+	color: #a8a8a8;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+	/* Ensure dropdown positioning */
+}
+
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+
+.mainUl {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+nav .mainUl li:hover .mainA {
+	color: #a8a8a8;
+
+}
+
+.dropdown li a:hover {
+	color: #a8a8a8;
+}
+
+/* Dropdown styles */
+.dropdown {
+	display: none;
+	/* Hide dropdown by default */
+	position: absolute;
+	background-color: #f78ce1;
+	padding: 10px;
+	top: 100%;
+	left: -10px;
+
+	width: 150px;
+	z-index: 1;
+}
+
+.dropdown li {
+	margin: 5px 0;
+}
+
+.dropdown a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: block;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown {
+	display: block;
+}
+
+
+#home {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	gap: 50px;
+}
+
+p {
+	font-family: 'Rubik';
+}
+
+
+
+
+/* Remove default link styling and ensure cursor changes on hover */
+a {
+	text-decoration: none;
+	/* Remove underline */
+	cursor: pointer;
+	/* Change cursor to pointer on hover */
+}
+
+/* Style the h2 tag containing the image */
+h2 {
+	display: inline-block;
+	/* Ensure h2 wraps around image */
+	opacity: 1;
+	/* Initial opacity */
+	transition: opacity 0.3s ease;
+	/* Smooth transition for opacity change */
+}
+
+/* Reduce opacity on hover */
+.mainImg:hover {
+	opacity: 0.7;
+}
+
+/* Adjust padding and margins as needed */
+.mainImg {
+	display: block;
+	/* Ensure image does not create extra space */
+	width: 150px;
+	border-radius: 50%;
+	/* Make image responsive */
+	height: 150px;
+}
+
+p {
+	color: #f03fcd
+}
+
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	gap: 250px;
+}
+
+.image-container img {
+	transition: transform 0.3s ease;
+}
+
+.image-wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.hover-text1 {
+	position: absolute;
+	border-radius: 25px;
+	transform: translate(-50%, -50%);
+	background-color: rgba(186, 182, 182, 0.8);
+	padding: 10px;
+	top: -20px;
+	left: 80px;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+.hover-text2 {
+	position: absolute;
+	border-radius: 25px;
+	transform: translate(-50%, -50%);
+	background-color: rgba(186, 182, 182, 0.8);
+	padding: 10px;
+	top: -20px;
+	left: 110px;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+.hover-text3 {
+	position: absolute;
+	border-radius: 25px;
+	transform: translate(-50%, -50%);
+	background-color: rgba(186, 182, 182, 0.8);
+	padding: 10px;
+	top: -20px;
+	left: 80px;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+.image-container img:hover+.hover-text1 {
+	display: block;
+}
+
+.image-container img:hover+.hover-text2 {
+	display: block;
+}
+
+.profileImg1,
+.profileImg2,
+.profileImg3 {
+	height: 300px;
+	border-radius: 25px;
+}
+
+.image-container img:hover+.hover-text3 {
+	display: block;
+}
+
+.imgClass {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.imgClass a {
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: start
+}
+
+.imgClass a p {
+	text-align: center;
+}
+
+.perure1 {
+	margin-inline-start: 30px;
+	margin-top: 10px;
+	color: #f03fcd;
+	font-size: 12px;
+
+}
+
+.perure2 {
+	margin-inline-start: 30px;
+	margin-top: 10px;
+	color: #f03fcd;
+	font-size: 12px;
+}
+
+.perureLehemBold {
+	margin-inline-start: 30px;
+	margin-top: 10px;
+	color: #e80dbc;
+	font-size: 12px;
+	font-weight: bold;
+}
